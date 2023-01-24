@@ -8,7 +8,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-const connectionString = "mongodb://localhost:27017"
+const connectionString = "mongodb+srv://printer.ffmyfcj.mongodb.net"
 
 var Client *mongo.Client
 
