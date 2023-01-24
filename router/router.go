@@ -19,9 +19,6 @@ func Router() *mux.Router {
 	userRouter.Use(middleware.CheckAuthentication)
 
 	userRouter.HandleFunc("/users", userController.GetAllUsers).Methods("GET")
-	//router.HandleFunc("/api/movie/{id}", controllers.MarkAsWatched).Methods("PUT")
-	//router.HandleFunc("/api/movie/{id}", controllers.DeleteAMovie).Methods("DELETE")
-	//router.HandleFunc("/api/deleteallmovie", controllers.DeleteAllMovies).Methods("DELETE")
 
 	return router
 }
